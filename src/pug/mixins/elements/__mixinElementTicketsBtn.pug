@@ -1,0 +1,10 @@
+//- Mixin element ticketsBtn
+//- ====================================================================================================================
+
+mixin addTicketsBtn(btnText, btnClassMod)
+	- btnText = btnText || "Мои Билеты"
+	- btnClassMod = btnClassMod || "custom"
+
+	div(class=`${pageClass}-wrapperBtn`)&attributes(attributes)
+		a(href="#!" data-modal=`.${pageClass}-modal__tickets` class=`${pageClass}-btn ${pageClass}-btn--${btnClassMod} ${pageClass}-modalShow`)
+			span= btnText

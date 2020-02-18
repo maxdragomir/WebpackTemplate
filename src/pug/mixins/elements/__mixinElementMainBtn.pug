@@ -1,0 +1,9 @@
+//- Mixin element mainBtn
+//- ====================================================================================================================
+
+mixin addMainBtn(btnText, btnClassMod)
+	- btnText = btnText || "Сделать Ставку"
+	- btnClassMod = btnClassMod || "custom"
+
+	a(href="#!" class=`${pageClass}-btn ${pageClass}-btn--${btnClassMod}`)&attributes(attributes)
+		span= btnText

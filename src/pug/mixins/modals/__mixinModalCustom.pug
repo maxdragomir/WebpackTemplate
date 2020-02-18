@@ -1,0 +1,11 @@
+//- Mixin modal custom
+//- ====================================================================================================================
+
+mixin addModalCustom(modalName)
+	- modalName = modalName || "custom"
+
+	div(class=`${pageClass}-modal ${pageClass}-modal__${modalName}`)
+		div(class=`${pageClass}-modal__close`).arcticmodal-close
+		div(class=`${pageClass}-modal__bg`)
+		div(class=`${pageClass}-modal__body`)
+

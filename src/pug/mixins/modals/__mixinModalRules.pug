@@ -1,0 +1,11 @@
+//- Mixin modal rules
+//- ====================================================================================================================
+
+mixin addModalRules()
+	div(class=`${pageClass}-modal ${pageClass}-modal__rules`)
+		div(class=`${pageClass}-modal__close`).arcticmodal-close
+			div(class=`${pageClass}-modal__closeImg`, style="background-image: url(assets/img/modal/close.png)")
+		div(class=`${pageClass}-modal__bg`)
+		div(class=`${pageClass}-modal__body`)
+			div(class=`${pageClass}-modal__scrollBlock ${pageClass}-scroll`)
+				block

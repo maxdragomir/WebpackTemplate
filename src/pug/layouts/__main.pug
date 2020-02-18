@@ -1,0 +1,32 @@
+include ../mixins/__allMixins
+//- PUG Variables
+block vars
+
+//- JS Variables
+script.
+	var pageClass = 'testTest',
+			hash = location.search.replace(/\?/, ''),
+			direction = false,
+			isDev = true;
+
+doctype html
+html(lang='en')
+	head
+		title= pageClass || "Project"
+
+		include ../inclueds/__head
+		include ../inclueds/__styles
+
+	body
+
+
+		// Landing
+		div(class=`${pageClass} ${pageClass}-wrapper`)
+			div(class=`${pageClass}-inner`)
+
+				//- Content start
+				block content
+				//- Content end
+
+
+		include ../inclueds/__scripts

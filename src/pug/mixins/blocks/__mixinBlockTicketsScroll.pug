@@ -1,0 +1,9 @@
+//- Mixin block ticketsScroll
+//- ====================================================================================================================
+
+
+mixin addTicketsScroll(countTicket)
+	- countTicket = countTicket || 100
+	div(class=`${pageClass}-wrapperTickets ${pageClass}-scroll`)
+		- for (var i = 0; i < countTicket; i++)
+		div(class=`${pageClass}-ticket`) 79542362

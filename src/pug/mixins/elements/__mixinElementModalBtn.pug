@@ -1,0 +1,10 @@
+//- Mixin element ticketsBtn
+//- ====================================================================================================================
+
+mixin addBtnModal(nameBtn, nameModalOpen)
+	- nameBtn = nameBtn || "P"
+
+	if nameModalOpen
+		button(data-modal=`.${pageClass}-modal__${nameModalOpen}` class=`${pageClass}-addition__btn ${pageClass}-modalShow` type='button')&attributes(attributes)
+			span= nameBtn
+
