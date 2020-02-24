@@ -22,7 +22,6 @@ module.exports = {
 
   entry: {
     app: PATHS.src,
-    // appRTL: `${PATHS.src}/appRTL.js`
   },
 
   output: {
@@ -110,10 +109,6 @@ module.exports = {
 
   plugins: [
     new VueLoaderPlugin(),
-    // new HtmlWebpackPlugin({
-    //   template: `${PATHS.src}/index.html`,
-    //   filename: './index.html'
-    // }),
     new CopyWebpackPlugin([
       {from: `${PATHS.src}/img`, to: `${PATHS.assets}img`},
       {from: `${PATHS.src}/fonts`, to: `${PATHS.assets}fonts`},
@@ -131,7 +126,6 @@ module.exports = {
         preserveLineBreaks: false,
         removeComments: false
       },
-      // filename: `./${page.replace(/\.pug/,'.php')}`
     })),
   ]
 };
