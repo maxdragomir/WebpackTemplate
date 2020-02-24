@@ -1,4 +1,4 @@
-include ../mixins/__allMixins
+include ../mixins/_allMixins
 
 //- PUG Variables
 block vars
@@ -8,8 +8,8 @@ html(lang='en')
 	head
 		title= titleName || "Project"
 
-		include ../inclueds/__head
-		include ../inclueds/__styles
+		include ../inclueds/layouts/_head
+		include ../inclueds/layouts/_styles
 
 	body
 
@@ -22,4 +22,4 @@ html(lang='en')
 			//- Content end
 
 
-		include ../inclueds/__scripts
+		include ../inclueds/layouts/_scripts
