@@ -12,4 +12,6 @@ $(document).ready(function() {
 			typeof document !== "undefined" && !!document.documentMode && !is_Edge,
 		is_firefox = typeof window.InstallTrigger !== "undefined",
 		is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+
 });

@@ -1,21 +1,9 @@
 extends ../layouts/__main
 
 block vars
-	-pageClass = 'test';
-	-pageName = 'index';
+	-titleName = 'My template';
 
 block content
 
-
-	section(class=`${pageClass}-sectionMain`)
-
-		div(class=`${pageClass}-container`)
-			div(class=`${pageClass}-titleWrapper`)
-				h1(class=`${pageClass}-title`)= pageName
-			div(class=`${pageClass}-actions`)
-				+addMainBtn("", "main")
-
-	section(class=`${pageClass}-sectionMain`)
-		div(class=`${pageClass}-container`)
-			+addImg("test", "assets/img/first.jpg")(data-animation="opacity: 0, y:50%" data-animation-ease="ease-in")
+	h1= titleName
 

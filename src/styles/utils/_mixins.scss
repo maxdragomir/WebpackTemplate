@@ -22,8 +22,8 @@
 
 
 // media
-@mixin mediaMixin($minMax, $width) {
-  @media only screen and (#{$minMax}-width: #{$width}px) {
+@mixin mediaMixin($minMax, $widthHeight, $numbers) {
+  @media only screen and (#{$minMax}-#{$widthHeight}: #{$numbers}px) {
     @content
   }
 }
@@ -41,13 +41,6 @@
     color: #{$color} !important;
   }
 }
-
-// animation
-//@mixin animation($name) {
-//  @keyframes #{$name} {
-//    @content
-//  }
-//}
 
 // gradientText
 @mixin gradientText($direction, $fColor, $fColorPercent, $sColor, $sColorPercent) {

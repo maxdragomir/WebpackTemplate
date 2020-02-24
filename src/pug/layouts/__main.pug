@@ -1,18 +1,12 @@
 include ../mixins/__allMixins
+
 //- PUG Variables
 block vars
-
-//- JS Variables
-script.
-	var pageClass = 'testTest',
-			hash = location.search.replace(/\?/, ''),
-			direction = false,
-			isDev = true;
 
 doctype html
 html(lang='en')
 	head
-		title= pageClass || "Project"
+		title= titleName || "Project"
 
 		include ../inclueds/__head
 		include ../inclueds/__styles
@@ -21,12 +15,11 @@ html(lang='en')
 
 
 		// Landing
-		div(class=`${pageClass} ${pageClass}-wrapper`)
-			div(class=`${pageClass}-inner`)
+		div(class=`wrapper`)
 
-				//- Content start
-				block content
-				//- Content end
+			//- Content start
+			block content
+			//- Content end
 
 
 		include ../inclueds/__scripts

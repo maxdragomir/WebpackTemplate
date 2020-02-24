@@ -78,11 +78,13 @@ module.exports = {
         },
         {
           loader: MiniCssExtractPlugin.loader,
-          options: {hmr: process.env.NODE_ENV === 'development'}
+          options: {
+            hmr: process.env.NODE_ENV === 'development'
+          }
         },
         {
           loader: 'css-loader',
-          options: { sourceMap: true}
+          options: { sourceMap: true, url: false}
         },
         {
           loader: 'postcss-loader',
@@ -90,7 +92,9 @@ module.exports = {
         },
         {
           loader: 'sass-loader',
-          options: {sourceMap: true}
+          options: {
+            sourceMap: true,
+          }
         },
 
       ]
